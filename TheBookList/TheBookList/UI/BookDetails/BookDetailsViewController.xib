@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BookDetailsViewController" customModule="TheBookList" customModuleProvider="target">
+            <connections>
+                <outlet property="lblAuthor" destination="XbQ-G1-bXf" id="ebo-oN-izN"/>
+                <outlet property="lblDescription" destination="LfG-hk-LoB" id="kgf-Ss-IYI"/>
+                <outlet property="lblIsbn" destination="WJK-21-7rO" id="s6d-pX-eli"/>
+                <outlet property="lblPrice" destination="NpQ-k8-bmh" id="oF1-u0-765"/>
+                <outlet property="lblTitle" destination="EZQ-Td-r8U" id="Ny5-c0-kGj"/>
+                <outlet property="loading" destination="ns4-TS-PnP" id="tP5-by-0sf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="508-q0-1Zg">
+                    <rect key="frame" x="8" y="52" width="398" height="802"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" insetsLayoutMarginsFromSafeArea="NO" text="The Pragmatic Programmer" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZQ-Td-r8U">
+                            <rect key="frame" x="0.0" y="0.0" width="398" height="33"/>
+                            <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="24"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="999" insetsLayoutMarginsFromSafeArea="NO" text="by Andrew Hunt and Dave Thomas" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XbQ-G1-bXf">
+                            <rect key="frame" x="0.0" y="53" width="398" height="19.5"/>
+                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="11x-Nf-g2Q" userLabel="Header Separator">
+                            <rect key="frame" x="0.0" y="88.5" width="278.5" height="2"/>
+                            <color key="backgroundColor" red="0.82573405371525888" green="0.88463435830936743" blue="0.96313445891243521" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="2" id="Pn1-4K-5wR"/>
+                            </constraints>
+                        </view>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LfG-hk-LoB">
+                            <rect key="frame" x="0.0" y="122.5" width="398" height="619.5"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <string key="text">Widely considered one of the best practical guides to programming, Steve McConnell’s original CODE COMPLETE has been helping developers write better software for more than a decade. Now this classic book has been fully updated and revised with leading-edge practices—and hundreds of new code samples—illustrating the art and science of software construction. Capturing the body of knowledge available from research, academia, and everyday commercial practice, McConnell synthesizes the most effective techniques and must-know principles into clear, pragmatic guidance. No matter what your experience level, development environment, or project size, this book will inform and stimulate your thinking—and help you build the highest quality code.</string>
+                            <color key="textColor" systemColor="labelColor"/>
+                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JKp-z0-SwR" userLabel="Footer">
+                            <rect key="frame" x="0.0" y="742" width="398" height="60"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" insetsLayoutMarginsFromSafeArea="NO" text="ISBN: 978-0201616224" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJK-21-7rO">
+                                    <rect key="frame" x="20" y="20.5" width="138" height="19.5"/>
+                                    <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" insetsLayoutMarginsFromSafeArea="NO" text="EUR 34.88" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NpQ-k8-bmh">
+                                    <rect key="frame" x="293" y="18.5" width="85" height="23.5"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.82573405369999997" green="0.88463435830000003" blue="0.96313445890000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="2qq-Mr-7go"/>
+                                <constraint firstItem="WJK-21-7rO" firstAttribute="centerY" secondItem="JKp-z0-SwR" secondAttribute="centerY" id="91L-v7-RED"/>
+                                <constraint firstAttribute="trailing" secondItem="NpQ-k8-bmh" secondAttribute="trailing" constant="20" id="DCh-wJ-a5i"/>
+                                <constraint firstItem="NpQ-k8-bmh" firstAttribute="centerY" secondItem="JKp-z0-SwR" secondAttribute="centerY" id="HjN-XB-lPd"/>
+                                <constraint firstItem="WJK-21-7rO" firstAttribute="leading" secondItem="JKp-z0-SwR" secondAttribute="leading" constant="20" id="h5d-yU-M5n"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="EZQ-Td-r8U" secondAttribute="trailing" id="0dB-GG-YiN"/>
+                        <constraint firstItem="JKp-z0-SwR" firstAttribute="top" secondItem="LfG-hk-LoB" secondAttribute="bottom" id="AQs-qS-vXG"/>
+                        <constraint firstItem="LfG-hk-LoB" firstAttribute="top" secondItem="11x-Nf-g2Q" secondAttribute="bottom" constant="32" id="AYo-03-p4H"/>
+                        <constraint firstItem="EZQ-Td-r8U" firstAttribute="leading" secondItem="508-q0-1Zg" secondAttribute="leading" id="Afd-YM-Bx1"/>
+                        <constraint firstItem="11x-Nf-g2Q" firstAttribute="width" secondItem="508-q0-1Zg" secondAttribute="width" multiplier="0.7" id="D3c-2C-cB9"/>
+                        <constraint firstItem="LfG-hk-LoB" firstAttribute="leading" secondItem="508-q0-1Zg" secondAttribute="leading" id="Eg1-en-MVw"/>
+                        <constraint firstAttribute="trailing" secondItem="LfG-hk-LoB" secondAttribute="trailing" id="Fki-VL-kSN"/>
+                        <constraint firstAttribute="trailing" secondItem="JKp-z0-SwR" secondAttribute="trailing" id="GaX-cS-Yl6"/>
+                        <constraint firstItem="11x-Nf-g2Q" firstAttribute="top" secondItem="XbQ-G1-bXf" secondAttribute="bottom" constant="16" id="M6g-UV-Fdt"/>
+                        <constraint firstAttribute="bottom" secondItem="JKp-z0-SwR" secondAttribute="bottom" id="RXX-o9-rVl"/>
+                        <constraint firstItem="11x-Nf-g2Q" firstAttribute="leading" secondItem="508-q0-1Zg" secondAttribute="leading" id="eWo-9Q-Z1N"/>
+                        <constraint firstItem="XbQ-G1-bXf" firstAttribute="leading" secondItem="508-q0-1Zg" secondAttribute="leading" id="iTY-RD-3Fu"/>
+                        <constraint firstItem="EZQ-Td-r8U" firstAttribute="top" secondItem="508-q0-1Zg" secondAttribute="top" id="j5b-3E-VdN"/>
+                        <constraint firstItem="JKp-z0-SwR" firstAttribute="leading" secondItem="508-q0-1Zg" secondAttribute="leading" id="jFm-vc-nDV"/>
+                        <constraint firstItem="XbQ-G1-bXf" firstAttribute="top" secondItem="EZQ-Td-r8U" secondAttribute="bottom" constant="20" id="qKR-Tw-Ipe"/>
+                        <constraint firstAttribute="trailing" secondItem="XbQ-G1-bXf" secondAttribute="trailing" id="t0S-cl-IRf"/>
+                    </constraints>
+                </view>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="ns4-TS-PnP">
+                    <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                </activityIndicatorView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="508-q0-1Zg" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="Kt6-bv-52O"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="508-q0-1Zg" secondAttribute="trailing" constant="8" id="Mgy-wz-pdw"/>
+                <constraint firstItem="ns4-TS-PnP" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="RVy-fl-58b"/>
+                <constraint firstItem="508-q0-1Zg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="b5J-Aa-Byt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="508-q0-1Zg" secondAttribute="bottom" constant="8" id="fpv-Gi-ie9"/>
+                <constraint firstItem="ns4-TS-PnP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="tDL-lA-ndu"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  TheBookList
+
+  Created by Daniel Colnaghi on 06/04/2021.
+  
+*/
+
+"BookList" = "Lista de livros";
+"ISBN" = "ISBN:";
+"By" = "por";
+"Alert" = "Alerta";
+"ErrorMessage" = "Ops, falha ao carregar a descricao.";
+"OK" = "Ok";
